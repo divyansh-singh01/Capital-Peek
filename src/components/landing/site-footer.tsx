@@ -5,16 +5,16 @@ const COLUMNS = [
   {
     title: "Product",
     links: [
-      { label: "ROI calculator", href: "#calculator" },
-      { label: "Features", href: "#features" },
-      { label: "Pricing", href: "#pricing" },
+      { label: "ROI calculator", href: "/#calculator" },
+      { label: "Features", href: "/#features" },
+      { label: "Pricing", href: "/#pricing" },
     ],
   },
   {
     title: "Company",
     links: [
-      { label: "Examples", href: "#case-studies" },
-      { label: "How it works", href: "#how-it-works" },
+      { label: "Examples", href: "/#case-studies" },
+      { label: "How it works", href: "/#how-it-works" },
     ],
   },
 ];
@@ -22,7 +22,7 @@ const COLUMNS = [
 export function SiteFooter() {
   return (
     <footer className="border-t border-border/70 bg-card/40">
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-[2fr_1fr_1fr_1fr] lg:px-8">
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-[2fr_1fr_1fr_1fr_1fr] lg:px-8">
         <div>
           <BrandLogo />
           <p className="mt-4 max-w-sm text-sm text-muted-foreground">
@@ -47,6 +47,21 @@ export function SiteFooter() {
             </ul>
           </div>
         ))}
+
+
+        <div>
+          <h3 className="text-sm font-semibold">Legal</h3>
+          <ul className="mt-4 space-y-2.5">
+            <li>
+              <Link
+                to="/privacy-policy"
+                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+              >
+                Privacy Policy
+              </Link>
+            </li>
+          </ul>
+        </div>
 
         <div>
           <h3 className="text-sm font-semibold">Account</h3>

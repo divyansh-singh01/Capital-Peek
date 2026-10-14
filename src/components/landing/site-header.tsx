@@ -7,11 +7,11 @@ import { ThemeToggle } from "@/components/theme-toggle";
 import { useSession } from "@/hooks/use-auth";
 
 const NAV = [
-  { label: "Calculator", href: "#calculator" },
-  { label: "Features", href: "#features" },
-  { label: "How it works", href: "#how-it-works" },
-  { label: "Examples", href: "#case-studies" },
-  { label: "Pricing", href: "#pricing" },
+  { label: "Calculator", href: "/#calculator" },
+  { label: "Features", href: "/#features" },
+  { label: "How it works", href: "/#how-it-works" },
+  { label: "Examples", href: "/#case-studies" },
+  { label: "Pricing", href: "/#pricing" },
 ];
 
 export function SiteHeader() {
