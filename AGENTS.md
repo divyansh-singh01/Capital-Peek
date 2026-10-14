@@ -1,0 +1,4 @@
+- Keep financial calculations pure in `src/lib/roi.ts` and generate audit PDFs in a client-only module invoked on click; this keeps the calculator and export consistent without exposing client financial inputs to a server.
+- Whenever designing, building, reviewing, or fixing UI/UX for the website/application, use the `ui-ux-pro-max` skill located at `.agents/skills/ui-ux-pro-max/` (or run `python .agents/skills/ui-ux-pro-max/scripts/search.py` for design system and stack recommendations).
+- Use the `daisyui` skill located at `.agents/skills/daisyui/` for Tailwind CSS component classes, semantic themes, colors, and UI layout components (buttons, modals, navbar, drawer, cards, forms, etc.).
+- Use the `react-kino` skill located at `.agents/skills/react-kino/` for cinematic scroll stories, scrollytelling scenes, parallax effects, scroll-driven video scrubbing, before/after comparison sliders, and interactive text reveals.
